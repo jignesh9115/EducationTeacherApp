@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Education Teacher App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_timetable">Time Table</string>
+    <string name="menu_assignment">Assignment</string>
+
+
+    <string name="Base_url">http://projects.drbbagpks.org/educationsystem/API/</string>
+    <string name="time_table_detail_by_teacher_url">timetable_detailbyteacher.php?teacher_id=</string>
+    <string name="teacher_login_url">teacher_login.php?user_name=</string>
+    <string name="get_student_list_by_standard_id_url">student_list_by_standard.php?standard_id=</string>
+    <string name="get_standard_list_url">standard_list.php</string>
+    <string name="get_subject_list_url">subject_list.php</string>
+    <string name="add_assignment_url">add_assignment.php?due_date=</string>
+
+
+</resources>

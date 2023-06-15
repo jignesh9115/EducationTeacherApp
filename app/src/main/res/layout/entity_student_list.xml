@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp">
+
+
+        <TextView
+            android:id="@+id/tv_student_rollno"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:ellipsize="end"
+            android:gravity="center|bottom"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="1000"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:text="student name"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cb_attendance_status"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:buttonTint="@color/colorPrimary"
+            android:background="#ffffff"
+            android:gravity="center|start"
+            android:paddingStart="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

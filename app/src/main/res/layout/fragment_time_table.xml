@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.timetable.TimeTableFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#1C84CA">
+
+            <TextView
+                android:id="@+id/tv_monday"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="MON"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_tuesday"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="TUE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FC5A5757"/>
+
+
+            <TextView
+                android:id="@+id/tv_wedenesday"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="WED"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FC5A5757"/>
+
+            <TextView
+                android:id="@+id/tv_thursday"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="THU"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FC5A5757"/>
+
+
+            <TextView
+                android:id="@+id/tv_frieday"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="FRI"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FC5A5757"/>
+
+
+            <TextView
+                android:id="@+id/tv_saturday"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="SAT"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FC5A5757"/>
+
+
+            <TextView
+                android:id="@+id/tv_sunday"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="SUN"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FC5A5757"/>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/lv_timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hsv_week"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_margin="3dp"/>
+
+    <ImageView
+        android:id="@+id/img_notfound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hsv_week"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:src="@drawable/nodatafound_img"/>
+
+
+</RelativeLayout>
